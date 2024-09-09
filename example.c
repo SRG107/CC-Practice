@@ -1,4 +1,3 @@
-//take array containing 1 to 15
 //print 'A' for num divided by 3 only
 //print 'B' for num divided by 5 only
 //print 'C' for num divided by 3 and 5 both
