@@ -1,0 +1,12 @@
+# Ignoring all ouput files
+*.out
+
+# Ignoring all log files
+*.log
+
+# Ignoring VSCode env
+.vscode/
+
+# Ignoring Folders
+CC-Practice/
+

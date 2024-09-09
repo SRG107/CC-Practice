@@ -1,0 +1,29 @@
+ 
+// add 2 numbers whtere number <= 10^100
+#include <iostream>
+#include <array>
+using namespace std;
+ int main()
+ {
+    int n1,n2,lensum,cr=0,c1,c2,s,i;
+    string num1(100,'0'),num2(100,'0');
+    cin>>num1;
+    cin>>num2;
+    n1 = num1.size();
+    n2 = num2.size();
+    lensum = n1>n2?n1:n2 +1;
+    string sum(lensum,'\0');
+    c1 = n1-1;
+    c2 = n2-1;
+    for(i=lensum-1;i>0;i--)
+    {
+        s = cr + (c1>=0?(n1[c1]-48):0) + (c2>=0?(n2[c2]-48):0);  // -48 to convert ASCII to int
+        sum[i] = s%10 ;   // +48 to convert int to ASCII
+        cr = s/10;
+        c1--;
+        c2--;
+    }
+    sum[i] = cr+48;
+    cout<<sum<<endl;
+    return 0;
+ }
